@@ -1,0 +1,211 @@
+@mixin ele-font($name) {
+    font-family: $name;
+}
+
+@for $i from 0 through 50 {
+    .an-#{$i} {
+        font-size: $i * 1px !important;
+        &.light-text {
+            @include ele-font('montserrat-light');
+        }
+        &.regular-text {
+            @include ele-font('montserrat-regular');
+        }
+        &.medium-text {
+            @include ele-font('montserrat-medium');
+        }
+        &.demi-bold-text {
+            @include ele-font('montserrat-semi-bold');
+        }
+        &.bold-text {
+            @include ele-font('montserrat-bold');
+        }
+    }
+}
+
+@each $key,
+$value in $colors {
+    .#{$key} {
+        background: $value;
+        background-color: $value !important;
+        border-color: $value !important;
+    }
+    .#{$key}--text {
+        color: $value !important;
+    }
+}
+
+@for $i from 0 through ceil($maxLoop/$step) {
+    $value: ($i - 0)*$step + 0;
+    .pa#{$value} {
+        padding: $value+px;
+    }
+    .pl#{$value} {
+        padding-left: $value+px;
+    }
+    .pt#{$value} {
+        padding-top: $value+px;
+    }
+    .pb#{$value} {
+        padding-bottom: $value+px;
+    }
+    .pr#{$value} {
+        padding-right: $value+px;
+    }
+    .px#{$value} {
+        padding-left: $value+px;
+        padding-right: $value+px;
+    }
+    .py#{$value} {
+        padding-top: $value+px;
+        padding-bottom: $value+px;
+    }
+    .ma#{$value} {
+        margin: $value+px;
+    }
+    .mt#{$value} {
+        margin-top: $value+px;
+    }
+    .mb#{$value} {
+        margin-bottom: $value+px !important;
+    }
+    .ml#{$value} {
+        margin-left: $value+px;
+    }
+    .mr#{$value} {
+        margin-right: $value+px !important;
+    }
+    .mx#{$value} {
+        margin-left: $value+px;
+        margin-right: $value+px;
+    }
+    .my#{$value} {
+        margin-top: $value+px;
+        margin-bottom: $value+px;
+    }
+    .br#{$value} {
+        border-radius: $value+px;
+    }
+}
+
+.mlr-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.headline {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+
+.pull-right {
+    float: right;
+}
+
+.border-none {
+    border: 0 !important;
+}
+
+.vert-middle {
+    vertical-align: middle;
+}
+
+.flex {
+    display: flex;
+    &.center {
+        align-items: center;
+    }
+}
+
+.flex-x {
+    display: flex;
+    flex-direction: row;
+    &.align-center {
+        align-items: center;
+    }
+    &.center {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.flex-y {
+    display: flex;
+    flex-direction: column;
+    &.center {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-0 {
+    flex: 0;
+}
+
+.flex-1 {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.fill-width {
+    width: 100% !important;
+}
+
+.fill-height {
+    height: 100% !important;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-hide {
+    overflow: hidden;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hover-underline {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.with-transition {
+    transition: all 0.3s ease-in;
+}
+
+.hover-border {
+    &:hover {
+        text-decoration: underline;
+    }
+}
