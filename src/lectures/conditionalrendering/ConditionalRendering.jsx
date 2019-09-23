@@ -1,4 +1,26 @@
 import React, { useState, useEffect } from 'react';
+const data = [
+    {
+        id: 1,
+        name: 'Chetan Virani'
+    },
+    {
+        id: 2,
+        name: 'Dhruvesh Soni'
+    },
+    {
+        id: 3,
+        name: 'Vishwas'
+    },
+    {
+        id: 4,
+        name: 'Shekhar Raval'
+    },
+    {
+        id: 5,
+        name: 'Harsh'
+    }
+];
 
 const ConditionalRendering = props => {
     const [count, setCount] = useState(0);
@@ -6,28 +28,6 @@ const ConditionalRendering = props => {
     let checkMinusValue;
 
     useEffect(() => {
-        const data = [
-            {
-                id: 1,
-                name: 'Chetan Virani'
-            },
-            {
-                id: 2,
-                name: 'Dhruvesh Soni'
-            },
-            {
-                id: 3,
-                name: 'Vishwas'
-            },
-            {
-                id: 4,
-                name: 'Shekhar Raval'
-            },
-            {
-                id: 5,
-                name: 'Harsh'
-            }
-        ]
         setTeam(data)
     }, [])
 

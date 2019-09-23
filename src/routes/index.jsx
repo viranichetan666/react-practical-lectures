@@ -5,6 +5,9 @@ import EventHandling from "lectures/eventhandling/EventHandling";
 import FragmentDemo from "lectures/fragment/FragmentDemo";
 import ConditionalRendering from "lectures/conditionalrendering/ConditionalRendering";
 import Welcome from 'components/welcome/Welcome'
+import Forms from 'lectures/forms/Forms'
+import BasicHooks from 'lectures/hooks/BasicHooks'
+import Composition from 'lectures/composition/Composition'
 
 const indexRoutes = [
     { path: "/welcome", component: Welcome },
@@ -14,6 +17,9 @@ const indexRoutes = [
     { path: "/event-handling", component: EventHandling },
     { path: "/fragment-demo", component: FragmentDemo },
     { path: "/conditional-rendering", component: ConditionalRendering },
+    { path: "/forms", component: Forms },
+    { path: "/basic-hooks", component: BasicHooks },
+    { path: "/composition", component: Composition },
 ];
 
 export default indexRoutes;

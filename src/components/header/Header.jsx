@@ -20,8 +20,17 @@ class Header extends Component {
                 <NavLink to="/fragment-demo" className="nav-url an-15 medium-text">
                     Fragment Demo
                 </NavLink>
+                <NavLink to="/forms" className="nav-url an-15 medium-text">
+                    Forms
+                </NavLink>
+                <NavLink to="/basic-hooks" className="nav-url an-15 medium-text">
+                    Hooks
+                </NavLink>
                 <NavLink to="/conditional-rendering" className="nav-url an-15 medium-text">
                     Conditional Rendering and looping
+                </NavLink>
+                <NavLink to="/composition" className="nav-url an-15 medium-text">
+                    Composition
                 </NavLink>
             </div>
         );

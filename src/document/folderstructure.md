@@ -3,16 +3,20 @@
         - font
         - scss
     - components
+        - compositionchild
         - eventhandlingchild
         - header
         - propsandstatechild
         - welcome
     - lectures
         - classbasedcomponent
+        - composition
         - conditionalrendering
         - eventhandling
+        - forms
         - fragment
         - functionalcomponents
+        - hooks
         - propandstate
     - routes
         - index

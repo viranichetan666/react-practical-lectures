@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chetanvolansys/React-IDP.git"
+    "url": "https://github.com/viranichetan666/react-practical-lectures.git"
   },
   "eslintConfig": {
     "extends": "react-app"
