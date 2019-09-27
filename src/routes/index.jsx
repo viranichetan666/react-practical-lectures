@@ -4,10 +4,10 @@ import PropsAndStateDemo from "lectures/propsandstate/PropsAndStateDemo";
 import EventHandling from "lectures/eventhandling/EventHandling";
 import FragmentDemo from "lectures/fragment/FragmentDemo";
 import ConditionalRendering from "lectures/conditionalrendering/ConditionalRendering";
-import Welcome from 'components/welcome/Welcome'
-import Forms from 'lectures/forms/Forms'
-import BasicHooks from 'lectures/hooks/BasicHooks'
-import Composition from 'lectures/composition/Composition'
+import Welcome from 'components/welcome/Welcome';
+import Forms from 'lectures/forms/Forms';
+import BasicHooks from 'lectures/hooks/BasicHooks';
+import Composition from 'lectures/composition/Composition';
 
 const indexRoutes = [
     { path: "/welcome", component: Welcome },

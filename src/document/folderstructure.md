@@ -1,3 +1,5 @@
+# public
+    index.html
 # Src
     - assets
         - font

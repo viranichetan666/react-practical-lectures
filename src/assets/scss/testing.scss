@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    overflow: auto;
 }
 
 .demo-button {
@@ -28,6 +29,7 @@
         margin: 5px;
         text-decoration: none;
         display: block;
+        border-radius: 6px;
     }
 }
 

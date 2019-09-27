@@ -7,23 +7,23 @@ class ClassComponent extends Component {
     }
 
     componentWillMount = () => {
-        console.log('Before Class component Mount')
+        console.log('Before Class component Mount');
     }
 
     componentDidMount = () => {
-        console.log('Class Component Mounted')
+        console.log('Class Component Mounted');
     }
 
     componentDidUpdate = () => {
-        console.log('Class Component Updated')
+        console.log('Class Component Updated');
     }
 
     componentWillReceiveProps(nextprops) {
-        console.log('Class Component Will receive props', nextprops)
+        console.log('Class Component Will receive props', nextprops);
     }
 
     componentWillUnmount = () => {
-        console.log('Class Component Destroy')
+        console.log('Class Component Destroy');
     }
 
     changestateDemo = () => {
