@@ -8,6 +8,7 @@ import Welcome from 'components/welcome/Welcome';
 import Forms from 'lectures/forms/Forms';
 import BasicHooks from 'lectures/hooks/BasicHooks';
 import Composition from 'lectures/composition/Composition';
+import AdvanceHooks from 'advancelecture/hooks/AdvanceHooks';
 
 const indexRoutes = [
     { path: "/welcome", component: Welcome },
@@ -20,6 +21,7 @@ const indexRoutes = [
     { path: "/forms", component: Forms },
     { path: "/basic-hooks", component: BasicHooks },
     { path: "/composition", component: Composition },
+    { path: "/advance-hook", component: AdvanceHooks },
 ];
 
 export default indexRoutes;

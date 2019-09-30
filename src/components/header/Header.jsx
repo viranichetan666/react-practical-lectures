@@ -36,6 +36,9 @@ class Header extends Component {
                     <NavLink to="/composition" className="nav-url an-15 medium-text">
                         Composition
                     </NavLink>
+                    <NavLink to="/advance-hook" className="nav-url an-15 medium-text">
+                        Advance In hooks
+                    </NavLink>
                 </div>
             </Fragment>
         );
