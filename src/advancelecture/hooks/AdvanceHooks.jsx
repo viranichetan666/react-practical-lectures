@@ -3,6 +3,9 @@ import CustomHooksDemo from 'components/advanceHooks/customhooks/CustomHooksDemo
 import UseMemoDemo from 'components/advanceHooks/usememodemo/UseMemoDemo'
 import UseCallbackDemo from 'components/advanceHooks/usecallbackdemo/UseCallbackDemo'
 import UseReducerDemo from 'components/advanceHooks/usereducerdemo/UseReducerDemo'
+import UseImperativeHandleDemo from 'components/advanceHooks/useImperative/UseImperativeHandleDemo'
+import MyContextComponent from 'components/advanceHooks/useContext/MyContextComponent'
+import UseLayoutEffectDemo from 'components/advanceHooks/uselayouteffect/UseLayoutEffectDemo'
 
 const data = [
     {
@@ -62,6 +65,19 @@ const Hooks = () => {
                 
                 <div>
                     <UseReducerDemo/>
+                </div>
+
+                <div>
+                    <UseImperativeHandleDemo/>
+                </div>
+
+                <div>
+                    <MyContextComponent/>
+                </div>
+
+
+                <div>
+                    <UseLayoutEffectDemo/>
                 </div>
             </div>
         </div>

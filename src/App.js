@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import layoutRoutes from "./routes/index.jsx";
 import Header from "./components/header/Header";
 import "assets/scss/app.scss";
+import { MyProvider } from "./components/advanceHooks/useContext/MyProvider";
 
 const App = () => {
   return (
@@ -16,18 +17,24 @@ const App = () => {
           {/* Header View */}
           <main className="flex-1">
             {/* Routing View */}
-            <Switch>
-              <Route exact path="/" render={() => <Redirect to="/welcome" />} />
-              {layoutRoutes.map((prop, key) => {
-                return (
-                  <Route
-                    path={prop.path}
-                    component={prop.component}
-                    key={key}
-                  />
-                );
-              })}
-            </Switch>
+            <MyProvider>
+              <Switch>
+                <Route
+                  exact
+                  path="/"
+                  render={() => <Redirect to="/welcome" />}
+                />
+                {layoutRoutes.map((prop, key) => {
+                  return (
+                    <Route
+                      path={prop.path}
+                      component={prop.component}
+                      key={key}
+                    />
+                  );
+                })}
+              </Switch>
+            </MyProvider>
             {/* Routing View */}
             <div className="author an-15 bold-text black--text">
               By: Chetan Virani

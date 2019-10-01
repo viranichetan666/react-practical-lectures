@@ -1,7 +1,6 @@
 @mixin ele-font($name) {
     font-family: $name;
 }
-
 @for $i from 0 through 50 {
     .an-#{$i} {
         font-size: $i * 1px !important;
