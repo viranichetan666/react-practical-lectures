@@ -1,10 +1,16 @@
 # public
     index.html
 # Src
+    - advancelecture
+        - higherordercomponent
+        - hooks
+        - reduxconcept
+        - styledcomponent
     - assets
         - font
         - scss
     - components
+        - advanceHooks
         - compositionchild
         - eventhandlingchild
         - header
@@ -20,6 +26,9 @@
         - functionalcomponents
         - hooks
         - propandstate
+    redux
+        - reducers.js
+        - store.js
     - routes
         - index
     - App.js

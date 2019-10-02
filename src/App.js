@@ -2,46 +2,53 @@ import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import layoutRoutes from "./routes/index.jsx";
 import Header from "./components/header/Header";
-import "assets/scss/app.scss";
+import { Provider } from "react-redux";
+import { store, persistor } from "./redux/store";
+import { PersistGate } from "redux-persist/integration/react";
 import { MyProvider } from "./components/advanceHooks/useContext/MyProvider";
+import "assets/scss/app.scss";
 
 const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className="flex-y fill-height">
-          {/* Header View */}
-          <header>
-            <Header />
-          </header>
-          {/* Header View */}
-          <main className="flex-1">
-            {/* Routing View */}
-            <MyProvider>
-              <Switch>
-                <Route
-                  exact
-                  path="/"
-                  render={() => <Redirect to="/welcome" />}
-                />
-                {layoutRoutes.map((prop, key) => {
-                  return (
+        <Provider store={store}>
+          <PersistGate loading={null} persistor={persistor}>
+            <div className="flex-y fill-height">
+              {/* Header View */}
+              <header>
+                <Header />
+              </header>
+              {/* Header View */}
+              <main className="flex-1">
+                {/* Routing View */}
+                <MyProvider>
+                  <Switch>
                     <Route
-                      path={prop.path}
-                      component={prop.component}
-                      key={key}
+                      exact
+                      path="/"
+                      render={() => <Redirect to="/welcome" />}
                     />
-                  );
-                })}
-              </Switch>
-            </MyProvider>
-            {/* Routing View */}
-            <div className="author an-15 bold-text black--text">
-              By: Chetan Virani
-              <div>Volansys Technologies</div>
+                    {layoutRoutes.map((prop, key) => {
+                      return (
+                        <Route
+                          path={prop.path}
+                          component={prop.component}
+                          key={key}
+                        />
+                      );
+                    })}
+                  </Switch>
+                </MyProvider>
+                {/* Routing View */}
+                <div className="author an-15 bold-text black--text">
+                  By: Chetan Virani
+                  <div>Volansys Technologies</div>
+                </div>
+              </main>
             </div>
-          </main>
-        </div>
+          </PersistGate>
+        </Provider>
       </BrowserRouter>
     </div>
   );
