@@ -1,7 +1,6 @@
-import React,{ useRef, useLayoutEffect, useEffect } from 'react'
+import React,{ useLayoutEffect, useEffect } from 'react'
 
 const UseLayoutEffectDemo = () => {
-    let inputRef = useRef();
 
     useEffect(() => {
         console.log("USE EFFECT FUNCTION TRIGGERED");
@@ -13,17 +12,13 @@ const UseLayoutEffectDemo = () => {
     useLayoutEffect(() => {
         console.log('useLayoutEffect')
     })
+    
+    console.log('render life cycle')
 
     return (
         <div>
             <div className="an-18 bold-text redcolor--text py15 text-center">
                 UseLayoutEffect Demo
-            </div>
-            <div>
-                <input 
-                    type="text" 
-                    ref={inputRef}
-                />
             </div>
         </div>
     )

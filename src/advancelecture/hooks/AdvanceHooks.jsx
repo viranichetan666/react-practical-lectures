@@ -21,7 +21,7 @@ const data = [
     {
         id: 3,
         name: 'Dhruvesh',
-        createdsimpleText: 1569653697
+        created: 1569653697
     },
     {
         id: 4,
@@ -44,11 +44,11 @@ const Hooks = () => {
 
     return (
         <div style={{maxWidth: "80%", margin: '0 auto'}}>
-            <div>
+            <div className="py50">
                 <div>
                     <CustomHooksDemo/>
                 </div>
-                <div>
+                {/* <div>
                     {
                         apiData &&
                         <UseMemoDemo
@@ -57,28 +57,28 @@ const Hooks = () => {
                             changeText={changeText}
                         />
                     }
-                </div>
+                </div> */}
 
-                <div>
+                {/* <div>
                     <UseCallbackDemo/>
-                </div>
+                </div> */}
                 
-                <div>
+                {/* <div>
                     <UseReducerDemo/>
-                </div>
+                </div> */}
 
-                <div>
+                {/* <div>
                     <UseImperativeHandleDemo/>
-                </div>
+                </div> */}
 
-                <div>
+                {/* <div>
                     <MyContextComponent/>
-                </div>
+                </div> */}
 
 
-                <div>
+                {/* <div>
                     <UseLayoutEffectDemo/>
-                </div>
+                </div> */}
             </div>
         </div>
     )
