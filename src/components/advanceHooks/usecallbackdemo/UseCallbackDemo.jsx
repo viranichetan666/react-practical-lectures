@@ -7,12 +7,12 @@ const UseCallbackDemo = () => {
     const [count2, setCount2] = useState(0);
 
     // One Way
-    const incrementCount1 = () => setCount1(count1 => count1 + 1);
-    const incrementCount2 = () => setCount2(c => c + 1);
+    // const incrementCount1 = () => setCount1(count1 => count1 + 1);
+    // const incrementCount2 = () => setCount2(c => c + 1);
 
     // Second Way
-    // const incrementCount1 = useCallback(() => setCount1(count => count + 1), []);
-    // const incrementCount2 = useCallback(() => setCount2(count => count + 1), []);
+    const incrementCount1 = useCallback(() => setCount1(count => count + 1), []);
+    const incrementCount2 = useCallback(() => setCount2(count => count + 1), []);
 
 
     // Register the functions so we can count them

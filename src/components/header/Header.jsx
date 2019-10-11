@@ -39,14 +39,17 @@ class Header extends Component {
                     <NavLink to="/advance-hook" className="nav-url an-15 medium-text">
                         Advance In hooks
                     </NavLink>
-                    <NavLink to="/redux" className="nav-url an-15 medium-text">
-                        Redux
-                    </NavLink>
                     <NavLink to="/style-component" className="nav-url an-15 medium-text">
                         Styled Component
                     </NavLink>
                     <NavLink to="/higher-order-component" className="nav-url an-15 medium-text">
                         Higher-order-component
+                    </NavLink>
+                    <NavLink to="/redux" className="nav-url an-15 medium-text">
+                        Redux
+                    </NavLink>
+                    <NavLink to="/redux-saga" className="nav-url an-15 medium-text">
+                        Redux Saga
                     </NavLink>
                 </div>
             </Fragment>

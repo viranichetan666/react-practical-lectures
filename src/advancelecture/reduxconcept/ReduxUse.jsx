@@ -3,8 +3,10 @@ import { connect } from "react-redux";
 import { compose } from "redux";
 import { withRouter } from "react-router-dom";
 import AuthActions from "redux/auth/actions";
+import AuthSagaActions from "redux/authSaga/actions";
 
 const { login, logout } = AuthActions;
+const { loginSaga, logoutSaga } = AuthSagaActions;
 
 const ReduxUse = (props) => {
 
@@ -30,6 +32,16 @@ const ReduxUse = (props) => {
             <div className="text-center pa10 ma10 redcolor light--text">
                 <button onClick={ handleLogout }>Logout</button>
             </div>
+
+            <div className="an-18 bluecolor--text bold-text text-center py10 myclass">
+                With Saga
+            </div>
+            <div className="text-center pa10 ma10 dark light--text">
+                <button onClick={ () =>  props.loginSaga() }>Login</button>
+            </div>
+            <div className="text-center pa10 ma10 redcolor light--text">
+                <button onClick={ () =>  props.logoutSaga() }>Logout</button>
+            </div>
         </div>
     );
 };
@@ -40,7 +52,9 @@ export default compose(
         null,
         { 
             login, 
-            logout 
+            logout,
+            loginSaga,
+            logoutSaga
         }
     )
 )(ReduxUse);

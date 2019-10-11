@@ -45,10 +45,10 @@ const Hooks = () => {
     return (
         <div style={{maxWidth: "80%", margin: '0 auto'}}>
             <div className="py50">
-                <div>
+                {/* <div>
                     <CustomHooksDemo/>
                 </div>
-                {/* <div>
+                <div>
                     {
                         apiData &&
                         <UseMemoDemo
@@ -57,26 +57,26 @@ const Hooks = () => {
                             changeText={changeText}
                         />
                     }
-                </div> */}
+                </div>
 
-                {/* <div>
+                <div>
                     <UseCallbackDemo/>
                 </div> */}
                 
-                {/* <div>
+                <div>
                     <UseReducerDemo/>
-                </div> */}
+                </div>
 
                 {/* <div>
                     <UseImperativeHandleDemo/>
-                </div> */}
+                </div>
 
-                {/* <div>
+                <div>
                     <MyContextComponent/>
-                </div> */}
+                </div>
 
 
-                {/* <div>
+                <div>
                     <UseLayoutEffectDemo/>
                 </div> */}
             </div>

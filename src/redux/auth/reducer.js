@@ -1,10 +1,8 @@
 import authAction from "./actions";
 
 const initState = {
-  isLogin: localStorage.getItem("isLogin")
-    ? localStorage.getItem("isLogin") === "true"
-    : false,
-  accessToken: localStorage.getItem("accessToken")
+  isLogin: false,
+  accessToken: null
 };
 
 export default function rootReducer(state = initState, action) {

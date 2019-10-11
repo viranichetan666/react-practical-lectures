@@ -12,6 +12,7 @@ import AdvanceHooks from 'advancelecture/hooks/AdvanceHooks';
 import ReduxUse from 'advancelecture/reduxconcept/ReduxUse';
 import StyleComponent from 'advancelecture/styledcomponent/StyleComponent';
 import HighrOrderComponent from 'advancelecture/higherordercomponent/Component';
+import ReduxSagaDemo from 'advancelecture/reduxsaga/ReduxSagaDemo';
 
 const indexRoutes = [
     { path: "/welcome", component: Welcome },
@@ -27,7 +28,8 @@ const indexRoutes = [
     { path: "/advance-hook", component: AdvanceHooks },
     { path: "/redux", component: ReduxUse },
     { path: "/style-component", component: StyleComponent },
-    { path: "/higher-order-component", component: HighrOrderComponent }
+    { path: "/higher-order-component", component: HighrOrderComponent },
+    { path: "/redux-saga", component: ReduxSagaDemo }
 ];
 
 export default indexRoutes;
