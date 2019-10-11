@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Forms = () => {
 
     const [firstname, setFirstname] = useState("");
+
+    useEffect(() => {
+        setFirstname('hello')
+    }, [])
 
     return (
         <div className="center-of-screen">

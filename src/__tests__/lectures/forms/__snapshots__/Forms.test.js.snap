@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check Forms in Lectures check state value 1`] = `
+<div
+  className="center-of-screen"
+>
+  <div>
+    <input
+      className="an-16 demi-bold-text pa10"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <div
+      className="an-16 demi-bold-text redcolor--text pt20"
+    >
+      Your FirstName is:  
+      
+    </div>
+  </div>
+</div>
+`;

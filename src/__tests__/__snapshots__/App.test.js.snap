@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My first snapshot test testing app button 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="flex-y fill-height"
+  >
+    <header>
+      <div
+        className="bluecolor text-center an-20 pt15 light--text bold-text"
+      >
+        React Concepts
+      </div>
+      <div
+        className="header bluecolor pa20 flex-x flex-wrap"
+      >
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/class-component"
+          onClick={[Function]}
+        >
+          Class Based Component
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/functional-component"
+          onClick={[Function]}
+        >
+          Functional Component
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/props-state"
+          onClick={[Function]}
+        >
+          Props and State Demo
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/event-handling"
+          onClick={[Function]}
+        >
+          Event Handling
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/fragment-demo"
+          onClick={[Function]}
+        >
+          Fragment Demo
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/forms"
+          onClick={[Function]}
+        >
+          Forms
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/basic-hooks"
+          onClick={[Function]}
+        >
+          Hooks
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/conditional-rendering"
+          onClick={[Function]}
+        >
+          Conditional Rendering and looping
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/composition"
+          onClick={[Function]}
+        >
+          Composition
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/advance-hook"
+          onClick={[Function]}
+        >
+          Advance In hooks
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/style-component"
+          onClick={[Function]}
+        >
+          Styled Component
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/higher-order-component"
+          onClick={[Function]}
+        >
+          Higher-order-component
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/redux"
+          onClick={[Function]}
+        >
+          Redux
+        </a>
+        <a
+          aria-current={null}
+          className="nav-url an-15 medium-text"
+          href="/redux-saga"
+          onClick={[Function]}
+        >
+          Redux Saga
+        </a>
+      </div>
+    </header>
+    <main
+      className="flex-1"
+    >
+      <div
+        className="center-of-screen"
+      >
+        <div
+          className="text-center"
+        >
+          <div
+            className="an-20 bold-text"
+          >
+            Welcome Team
+          </div>
+          <div
+            className="my15 an-16 medium-text"
+          >
+            React js learning step by step.
+          </div>
+        </div>
+      </div>
+      <div
+        className="author an-15 bold-text black--text"
+      >
+        By: Chetan Virani
+        <div>
+          Volansys Technologies
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+`;
