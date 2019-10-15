@@ -1,6 +1,5 @@
 import axios from "axios";
-
-import { BASE_URL } from "helper/constant";
+const BASE_URL = process.env.REACT_APP_APIBASE;
 
 const setHeadersWithAccessToken = ({ token }) => {
   axios.defaults.headers.common["Authorization"] = token;

@@ -1,0 +1,1 @@
+# https://github.com/nitin42/react-perf-devtool/tree/v2#using-the-browser-extension

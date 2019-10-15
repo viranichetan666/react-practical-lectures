@@ -9,6 +9,7 @@ import { MyProvider } from "./components/advanceHooks/useContext/MyProvider";
 import "assets/scss/app.scss";
 
 const App = () => {
+  console.log("REACT_APP_Name", process.env.REACT_APP_Name);
   return (
     <div className="App">
       <BrowserRouter>
