@@ -10,6 +10,8 @@ const { loginSaga, logoutSaga } = AuthSagaActions;
 
 const ReduxUse = (props) => {
 
+    console.log('isLogin', props.isLogin)
+
     const handleLogin = () => {
             const data = {
                 token: "YOURLOGINTOKEN"
@@ -46,10 +48,16 @@ const ReduxUse = (props) => {
     );
 };
 
+const mapStateToProps = (state) => {
+    return {
+        isLogin: state.auth.isLogin
+    }
+}
+
 export default compose(
     withRouter,
     connect(
-        null,
+        mapStateToProps,
         { 
             login, 
             logout,

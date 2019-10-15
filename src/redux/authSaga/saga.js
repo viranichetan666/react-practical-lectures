@@ -1,8 +1,8 @@
-import { all, takeEvery, put, fork, select } from "redux-saga/effects";
+import { all, takeEvery, put, fork } from "redux-saga/effects"; // You can import select
 import actions from "./actions";
 import { loginApiHandler } from "services";
 
-const fakeApiCall = true;
+// const fakeApiCall = true;
 
 export function* loginRequest() {
   yield takeEvery("LOGIN_REQUEST", function*() {

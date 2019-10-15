@@ -9,7 +9,8 @@ import Forms from 'lectures/forms/Forms';
 import BasicHooks from 'lectures/hooks/BasicHooks';
 import Composition from 'lectures/composition/Composition';
 import AdvanceHooks from 'advancelecture/hooks/AdvanceHooks';
-import ReduxUse from 'advancelecture/reduxconcept/ReduxUse';
+// import ReduxUse from 'advancelecture/reduxconcept/ReduxUse';
+import ReduxHooks from './../advancelecture/reduxconcept/hooks/ReduxHooks';
 import StyleComponent from 'advancelecture/styledcomponent/StyleComponent';
 import HighrOrderComponent from 'advancelecture/higherordercomponent/Component';
 import ReduxSagaDemo from 'advancelecture/reduxsaga/ReduxSagaDemo';
@@ -26,7 +27,7 @@ const indexRoutes = [
     { path: "/basic-hooks", component: BasicHooks },
     { path: "/composition", component: Composition },
     { path: "/advance-hook", component: AdvanceHooks },
-    { path: "/redux", component: ReduxUse },
+    { path: "/redux", component: ReduxHooks },
     { path: "/style-component", component: StyleComponent },
     { path: "/higher-order-component", component: HighrOrderComponent },
     { path: "/redux-saga", component: ReduxSagaDemo }
