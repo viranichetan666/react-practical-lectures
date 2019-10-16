@@ -24,16 +24,6 @@ const todoAction = {
       type: todoAction.REQ_DELETE_TODO,
       id: id
     };
-  },
-  addTodo: todo => ({
-    type: todoAction.ADD_TODO,
-    todo
-  }),
-  deleteTodo: id => {
-    return {
-      type: todoAction.DELETE_TODO,
-      id
-    };
   }
 };
 

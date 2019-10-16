@@ -16,7 +16,7 @@ function* getTodo() {
 }
 
 function* addTodo(data) {
-  console.log("addTodo", data);
+  // console.log("Finally Add Todo with Saga", data);
   // Api Call Here
   const newTodo = {
     id: Math.random(),

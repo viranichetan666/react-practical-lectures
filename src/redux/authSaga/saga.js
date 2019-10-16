@@ -10,6 +10,7 @@ export function* loginRequest() {
       email: "chetan.virani@volansys.com",
       password: "123456"
     });
+    console.log("login response", response);
 
     if (response.status === 200) {
       yield put({

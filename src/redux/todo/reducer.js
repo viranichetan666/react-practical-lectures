@@ -29,6 +29,7 @@ export default function rootReducer(state = initState, action) {
         todoDeleteLoader: true
       };
     case todoAction.ADD_TODO:
+      // console.log("add todo successfully in reducer", action.todo);
       return {
         ...state,
         todoAddLoader: false,
