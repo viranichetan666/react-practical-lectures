@@ -1,40 +1,60 @@
 .center-of-screen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: auto;
 }
 
 .demo-button {
-    border: 0;
-    border-radius: 6px;
-    cursor: pointer;
-    outline: 0;
-    padding: 15px;
-    background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 100%);
-    background-size: 200% auto;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: 0;
+  padding: 15px;
+  background-image: linear-gradient(
+    to right,
+    #8490ff 0%,
+    #62bdfc 48%,
+    #8490ff 100%
+  );
+  background-size: 200% auto;
+  color: #fff;
+  transition: all 300ms linear 0s;
+  &:hover {
+    background-position: right center;
     color: #fff;
-    transition: all 300ms linear 0s;
-    &:hover {
-        background-position: right center;
-        color: #fff;
-    }
+  }
 }
 
 .header {
-    .nav-url {
-        padding: 10px;
-        background-color: white;
-        margin: 5px;
-        text-decoration: none;
-        display: block;
-        border-radius: 6px;
-    }
+  .nav-url {
+    padding: 10px;
+    background-color: white;
+    margin: 5px;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+  }
 }
 
 .author {
-    position: fixed;
-    bottom: 15px;
-    right: 30px;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+}
+
+.task-card {
+  width: 300px;
+}
+
+.task-title {
+  overflow-wrap: break-word;
+  width: 190px;
+}
+
+.task-board-container {
+  max-width: 100%;
+  overflow: auto;
+  min-height: 500px;
 }
