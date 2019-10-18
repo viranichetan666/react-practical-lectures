@@ -10,7 +10,7 @@ export function* loginRequest() {
       email: "chetan.virani@volansys.com",
       password: "123456"
     });
-    console.log("login response", response);
+    console.log("login api response", response);
 
     if (response.status === 200) {
       yield put({
@@ -31,6 +31,6 @@ export function* loginError() {
   yield takeEvery(actions.LOGIN_ERROR, function*() {});
 }
 
-export default function* rootSaga() {
+export default function* authSagas() {
   yield all([fork(loginRequest), fork(loginError)]);
 }

@@ -10,7 +10,7 @@ const sagaMiddleware = createSagaMiddleware();
 
 const customMiddleware = store => next => action => {
   // Our middleware
-  console.log(`Redux Log:`, action);
+  console.log(`Redux Custom Middleware Log:`, action);
   // call the next function
   next(action);
 };
@@ -42,3 +42,16 @@ export { store, persistor };
 
 // The way I classify it is when ever state needs to be shared by multiple components or
 // multiple pages and we need to persist some data over route changes, all that data should go inside the redux store.
+
+// Curring Function
+
+// let curriedAdd = function(a) {
+//   return function(b) {
+//     return a + b;
+//   };
+// };
+
+// let curriedAdd2 = a => b => a + b;
+
+// console.log(curriedAdd(1)(2));
+// console.log(curriedAdd2(1)(2));

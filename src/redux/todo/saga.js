@@ -42,6 +42,6 @@ function* watchAddTodo() {
   yield takeEvery(todoActions.REQ_ADD_TODO, addTodo);
 }
 
-export default function* rootSaga() {
+export default function* todoSagas() {
   yield all([fork(watchGetTodo), fork(watchDeleteTodo), fork(watchAddTodo)]);
 }
