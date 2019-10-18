@@ -15,7 +15,6 @@
 # Use ES6 de-structuring for your props.
 # Use conditional rendering.
 # User `map()` to collect and render collections of components.
-# Use partial components, such as `<>` … `</>`
 # Name your event handlers with handle prefixes, such as `handleClick()` or `handleUpdate()`.
 # Use JEST to test your ReactJS code.
 

@@ -23,6 +23,7 @@ function* addTodo(data) {
     name: data.todoInput
   };
   yield put({ type: todoActions.ADD_TODO, todo: newTodo });
+  yield put({ type: "LOGIN", sghdfj: newTodo });
 }
 
 function* deleteTodo(data) {

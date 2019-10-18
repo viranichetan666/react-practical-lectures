@@ -4,13 +4,12 @@ import todo from "./todo/reducer";
 import { combineReducers } from "redux";
 import { routerReducer } from "react-router-redux";
 
-const createReducer = asyncReducers =>
+const createReducer = () =>
   combineReducers({
     auth,
     authSaga,
     todo,
-    router: routerReducer,
-    ...asyncReducers
+    router: routerReducer
   });
 
 export default createReducer;

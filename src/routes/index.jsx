@@ -10,7 +10,7 @@ import BasicHooks from "lectures/hooks/BasicHooks";
 import Composition from "lectures/composition/Composition";
 import AdvanceHooks from "advancelecture/hooks/AdvanceHooks";
 // import ReduxUse from 'advancelecture/reduxconcept/ReduxUse';
-import ReduxHooks from "./../advancelecture/reduxconcept/hooks/ReduxHooks";
+import ReduxHooks from "advancelecture/reduxconcept/hooks/ReduxHooks";
 import StyleComponent from "advancelecture/styledcomponent/StyleComponent";
 import HighrOrderComponent from "advancelecture/higherordercomponent/Component";
 import ReduxSagaDemo from "advancelecture/reduxsaga/ReduxSagaDemo";
