@@ -42,10 +42,6 @@ const App = () => {
                   </Switch>
                 </MyProvider>
                 {/* Routing View */}
-                <div className="author an-15 bold-text black--text">
-                  By: Chetan Virani
-                  <div>Volansys Technologies</div>
-                </div>
               </main>
             </div>
           </PersistGate>
